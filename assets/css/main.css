@@ -893,21 +893,13 @@ button,
 
 /* Style for Zonr logo */
 .top-right-logo {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	font-family: 'Madefor', sans-serif; /* Optional if you want the Madefor font */
-	font-size: 1.5rem;
-	font-weight: bold;
+  position: absolute;
+  top: 10px;  /* Adjust vertical position */
+  right: 10px;  /* Adjust horizontal position */
 }
 
-.top-right-logo a {
-	text-decoration: none; /* Removes the underline */
-	color: #ffffff; /* Adjust color to match your theme */
-	transition: color 0.3s ease;
-	cursor: pointer; /* Adds a pointer cursor for better UX */
+.top-right-logo img {
+  width: 125px;  /* Adjust the width as per your requirement */
+  height: auto;  /* Maintain the aspect ratio */
 }
 
-.top-right-logo a:hover {
-	color: #ffdf6c; /* Hover effect */
-}
