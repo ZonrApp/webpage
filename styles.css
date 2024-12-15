@@ -1,7 +1,8 @@
-
+/* Add space at the top to avoid cut-off on mobile */
 body {
     margin: 0;
     padding: 0;
+    padding-top: 20px; /* Space for mobile safe area */
     background-color: #f4f6f8;
     color: #212121;
     font-family: 'Roboto', sans-serif;
@@ -9,30 +10,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: flex-start; /* Align content to top */
+    min-height: 100vh;
     overflow-y: auto;
 }
 
+/* Keep logo fixed at the top center */
 .logo {
     max-width: 200px;
-    margin-top: 40px;
+    margin-top: 20px; /* Adjust margin for better spacing */
     margin-bottom: 10px;
 }
 
+/* Ensure story content scrolls properly */
 .story {
+    width: 100%;
+    max-width: 800px; /* Optional: limit content width for readability */
     text-align: left;
     color: #212121;
-    padding: 0 20px;
+    padding: 10px 20px; /* Add padding for mobile */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
-
-.story h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.story p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
